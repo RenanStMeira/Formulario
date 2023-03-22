@@ -1,0 +1,62 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 25px;
+    font-size: 1.6rem;
+}
+
+textarea {
+    height: 20vh;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+@media (max-width: 420px){
+    h1 {
+        font-size: 1.3rem;
+        width: 70%;
+    }
+  
+    input, label, select, textarea, button {
+        width: 50%;
+    }
+    option {
+        font-size: 1.3rem;
+    }
+}
